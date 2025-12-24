@@ -1,7 +1,7 @@
 ---
 name: Slack API
 description: Use when working with health check, seed, slack api, users, web hook, or making API calls to https://slack.augur-api.com.
-version: 1.0.1
+version: 1.0.2
 ---
 
 # Slack

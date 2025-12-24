@@ -1,7 +1,7 @@
 ---
 name: Items API
 description: Use when working with alternate code, assembly hdr, assembly line, attribute, attribute group, attribute group x attribute value, attribute value, attribute x attribute group, bin, brands, brands x items, categories, contracts items, data type context, health check, internal, inv accessory, inv adj hdr, inv bin, inv loc, inv loc stock status, inv mast, inv mast 15, inv mast attributes, inv mast context, inv mast external, inv mast faq, inv mast language, inv mast links, inv mast lot, inv mast msds, inv mast similarity hdr, inv mast similarity line, inv mast sub parts, inv mast ud, inv mast x restricted class, inv period usage, inv sub, inv xref, inventory receipts hdr, inventory supplier, inventory supplier x loc, item attribute value, item catalog, item catalog def, item catalog def detail, item category, item category hierarchy, item category hierarchy delete audit, item category image, item category link, item category meaning, item category text, item category ud, item category x inv mast, item conversion, item favorites, item meaning, item metrics, item package type, item price hash, item uom, item variant hdr, item variant line, item wishlist hdr, item wishlist line, package type, promotional group det, promotional group hdr, refresh items log, seed, sync tracking hdr, sync tracking line, unit of measure, web display type, or making API calls to https://items.augur-api.com.
-version: 1.0.1
+version: 1.0.2
 ---
 
 # Items

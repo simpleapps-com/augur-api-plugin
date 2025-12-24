@@ -1,7 +1,7 @@
 ---
 name: Commerce API
 description: Use when working with cart hdr, cart line, checkout, checkout legacy, checkout prophet21 hdr, checkout prophet21 line, health check, seed, or making API calls to https://commerce.augur-api.com.
-version: 1.0.1
+version: 1.0.2
 ---
 
 # Commerce

@@ -1,7 +1,7 @@
 ---
 name: Gregorovich API
 description: Use when working with agr info, agr site, chat gpt, documents, embeddings, gpt chat, groq, health check, inv mast context, items, ollama, open ai, prompts, rag data, seed, vector store, vllm, or making API calls to https://gregorovich.augur-api.com.
-version: 1.0.1
+version: 1.0.2
 ---
 
 # Gregorovich

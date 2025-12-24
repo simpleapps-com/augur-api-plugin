@@ -1,7 +1,7 @@
 ---
 name: P21 Pim API
 description: Use when working with health check, inv mast ext, inv mast files, inv mast text, items, podcasts, seed, or making API calls to https://p21-pim.augur-api.com.
-version: 1.0.1
+version: 1.0.2
 ---
 
 # P21 Pim

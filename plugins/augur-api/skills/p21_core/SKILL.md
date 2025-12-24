@@ -1,7 +1,7 @@
 ---
 name: P21 Core API
 description: Use when working with address, branch, cash drawer, cc processor x location, cc tables, code p21, company, counter, creditcard processor, health check, language, location, note, payment types, restricted class, seed, state, system setting, term x language, terms, user defined column, users, or making API calls to https://p21-core.augur-api.com.
-version: 1.0.1
+version: 1.0.2
 ---
 
 # P21 Core

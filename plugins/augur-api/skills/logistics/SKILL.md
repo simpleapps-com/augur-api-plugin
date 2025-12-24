@@ -1,7 +1,7 @@
 ---
 name: Logistics API
 description: Use when working with health check, seed, shipvia, speedship, or making API calls to https://logistics.augur-api.com.
-version: 1.0.1
+version: 1.0.2
 ---
 
 # Logistics
