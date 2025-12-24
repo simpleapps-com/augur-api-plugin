@@ -1,0 +1,17 @@
+# Inv Mast Similarity Hdr
+
+Datatype for items microservice.
+
+## GET /inv-mast/{invMastUid}/similar
+
+List similar items
+
+### Parameters
+
+| Name | Location | Required | Type | Description |
+|------|----------|----------|------|-------------|
+| Authorization | header | Yes | string | Bearer token (JWT) |
+| inv-mast-uid | path | Yes | integer | inv_mast.inv_mast_uid |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+
+---
