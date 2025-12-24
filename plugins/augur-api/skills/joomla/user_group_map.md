@@ -2,7 +2,7 @@
 
 Datatype for joomla microservice.
 
-## GET /users/:id/groups/:groupId
+## GET /users/{id}/groups/{groupId}
 
 get User Group
 
@@ -17,7 +17,7 @@ get User Group
 
 ---
 
-## GET /users/:id/groups
+## GET /users/{id}/groups
 
 List User Groups
 
@@ -33,7 +33,7 @@ List User Groups
 
 ---
 
-## POST /users/:id/groups
+## POST /users/{id}/groups
 
 Create/update User Group Mapping
 

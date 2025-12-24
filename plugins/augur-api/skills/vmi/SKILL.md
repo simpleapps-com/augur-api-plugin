@@ -123,8 +123,8 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /warehouse/:warehouseUid/users/:usersId | Get Warehouse User Assignment | [warehouse_x_users.md](warehouse_x_users.md#get-warehouse:warehouseUidusers:usersId) |
-| PUT | /warehouse/:warehouseUid/users/:usersId | Update Warehouse User Assignment | [warehouse_x_users.md](warehouse_x_users.md#put-warehouse:warehouseUidusers:usersId) |
-| DELETE | /warehouse/:warehouseUid/users/:usersId | Remove User from Warehouse (sets status_cd to 700) | [warehouse_x_users.md](warehouse_x_users.md#delete-warehouse:warehouseUidusers:usersId) |
-| GET | /warehouse/:warehouseUid/users | List Warehouses Users | [warehouse_x_users.md](warehouse_x_users.md#get-warehouse:warehouseUidusers) |
-| POST | /warehouse/:warehouseUid/users | Create/Update Warehouse User | [warehouse_x_users.md](warehouse_x_users.md#post-warehouse:warehouseUidusers) |
+| GET | /warehouse/{warehouseUid}/users/{usersId} | Get Warehouse User Assignment | [warehouse_x_users.md](warehouse_x_users.md#get-warehousewarehouseUidusersusersId) |
+| PUT | /warehouse/{warehouseUid}/users/{usersId} | Update Warehouse User Assignment | [warehouse_x_users.md](warehouse_x_users.md#put-warehousewarehouseUidusersusersId) |
+| DELETE | /warehouse/{warehouseUid}/users/{usersId} | Remove User from Warehouse (sets status_cd to 700) | [warehouse_x_users.md](warehouse_x_users.md#delete-warehousewarehouseUidusersusersId) |
+| GET | /warehouse/{warehouseUid}/users | List Warehouses Users | [warehouse_x_users.md](warehouse_x_users.md#get-warehousewarehouseUidusers) |
+| POST | /warehouse/{warehouseUid}/users | Create/Update Warehouse User | [warehouse_x_users.md](warehouse_x_users.md#post-warehousewarehouseUidusers) |

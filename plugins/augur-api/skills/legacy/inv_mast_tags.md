@@ -2,7 +2,7 @@
 
 Datatype for legacy microservice.
 
-## GET /inv-mast/:invMastUid/tags/:invMastTagsUid
+## GET /inv-mast/{invMastUid}/tags/{invMastTagsUid}
 
 Get Inv Mast Tag Details
 
@@ -17,7 +17,7 @@ Get Inv Mast Tag Details
 
 ---
 
-## PUT /inv-mast/:invMastUid/tags/:invMastTagsUid
+## PUT /inv-mast/{invMastUid}/tags/{invMastTagsUid}
 
 Update Inv Mast Tag
 
@@ -32,7 +32,7 @@ Update Inv Mast Tag
 
 ---
 
-## DELETE /inv-mast/:invMastUid/tags/:invMastTagsUid
+## DELETE /inv-mast/{invMastUid}/tags/{invMastTagsUid}
 
 Delete Inv Mast Tag
 
@@ -47,7 +47,7 @@ Delete Inv Mast Tag
 
 ---
 
-## GET /inv-mast/:invMastUid/tags
+## GET /inv-mast/{invMastUid}/tags
 
 List Inv Mast Tags
 
@@ -61,7 +61,7 @@ List Inv Mast Tags
 
 ---
 
-## POST /inv-mast/:invMastUid/tags
+## POST /inv-mast/{invMastUid}/tags
 
 Create Inv Mast Tag
 

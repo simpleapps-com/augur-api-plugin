@@ -2,7 +2,7 @@
 
 Datatype for vmi microservice.
 
-## GET /warehouse/:warehouseUid/users/:usersId
+## GET /warehouse/{warehouseUid}/users/{usersId}
 
 Get Warehouse User Assignment
 
@@ -17,7 +17,7 @@ Get Warehouse User Assignment
 
 ---
 
-## PUT /warehouse/:warehouseUid/users/:usersId
+## PUT /warehouse/{warehouseUid}/users/{usersId}
 
 Update Warehouse User Assignment
 
@@ -32,7 +32,7 @@ Update Warehouse User Assignment
 
 ---
 
-## DELETE /warehouse/:warehouseUid/users/:usersId
+## DELETE /warehouse/{warehouseUid}/users/{usersId}
 
 Remove User from Warehouse (sets status_cd to 700)
 
@@ -47,7 +47,7 @@ Remove User from Warehouse (sets status_cd to 700)
 
 ---
 
-## GET /warehouse/:warehouseUid/users
+## GET /warehouse/{warehouseUid}/users
 
 List Warehouses Users
 
@@ -64,7 +64,7 @@ List Warehouses Users
 
 ---
 
-## POST /warehouse/:warehouseUid/users
+## POST /warehouse/{warehouseUid}/users
 
 Create/Update Warehouse User
 

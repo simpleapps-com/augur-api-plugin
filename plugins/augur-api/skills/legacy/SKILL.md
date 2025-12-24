@@ -35,11 +35,11 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /inv-mast/:invMastUid/tags/:invMastTagsUid | Get Inv Mast Tag Details | [inv_mast_tags.md](inv_mast_tags.md#get-inv-mast:invMastUidtags:invMastTagsUid) |
-| PUT | /inv-mast/:invMastUid/tags/:invMastTagsUid | Update Inv Mast Tag | [inv_mast_tags.md](inv_mast_tags.md#put-inv-mast:invMastUidtags:invMastTagsUid) |
-| DELETE | /inv-mast/:invMastUid/tags/:invMastTagsUid | Delete Inv Mast Tag | [inv_mast_tags.md](inv_mast_tags.md#delete-inv-mast:invMastUidtags:invMastTagsUid) |
-| GET | /inv-mast/:invMastUid/tags | List Inv Mast Tags | [inv_mast_tags.md](inv_mast_tags.md#get-inv-mast:invMastUidtags) |
-| POST | /inv-mast/:invMastUid/tags | Create Inv Mast Tag | [inv_mast_tags.md](inv_mast_tags.md#post-inv-mast:invMastUidtags) |
+| GET | /inv-mast/{invMastUid}/tags/{invMastTagsUid} | Get Inv Mast Tag Details | [inv_mast_tags.md](inv_mast_tags.md#get-inv-mastinvMastUidtagsinvMastTagsUid) |
+| PUT | /inv-mast/{invMastUid}/tags/{invMastTagsUid} | Update Inv Mast Tag | [inv_mast_tags.md](inv_mast_tags.md#put-inv-mastinvMastUidtagsinvMastTagsUid) |
+| DELETE | /inv-mast/{invMastUid}/tags/{invMastTagsUid} | Delete Inv Mast Tag | [inv_mast_tags.md](inv_mast_tags.md#delete-inv-mastinvMastUidtagsinvMastTagsUid) |
+| GET | /inv-mast/{invMastUid}/tags | List Inv Mast Tags | [inv_mast_tags.md](inv_mast_tags.md#get-inv-mastinvMastUidtags) |
+| POST | /inv-mast/{invMastUid}/tags | Create Inv Mast Tag | [inv_mast_tags.md](inv_mast_tags.md#post-inv-mastinvMastUidtags) |
 
 ### inv_mast_web_desc
 

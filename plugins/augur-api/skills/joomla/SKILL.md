@@ -49,9 +49,9 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /users/:id/groups/:groupId | get User Group | [user_group_map.md](user_group_map.md#get-users:idgroups:groupId) |
-| GET | /users/:id/groups | List User Groups | [user_group_map.md](user_group_map.md#get-users:idgroups) |
-| POST | /users/:id/groups | Create/update User Group Mapping | [user_group_map.md](user_group_map.md#post-users:idgroups) |
+| GET | /users/{id}/groups/{groupId} | get User Group | [user_group_map.md](user_group_map.md#get-usersidgroupsgroupId) |
+| GET | /users/{id}/groups | List User Groups | [user_group_map.md](user_group_map.md#get-usersidgroups) |
+| POST | /users/{id}/groups | Create/update User Group Mapping | [user_group_map.md](user_group_map.md#post-usersidgroups) |
 
 ### usergroups
 
