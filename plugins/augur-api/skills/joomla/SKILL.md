@@ -1,7 +1,7 @@
 ---
 name: Joomla API
 description: Use when working with categories, content, contentitem tag map, extensions, fields, fields values, health check, menu, schemas, session, tags, user group map, user notes, user profiles, usergroups, users, or making API calls to https://joomla.augur-api.com.
-version: 1.0.2
+version: 1.0.3
 ---
 
 # Joomla

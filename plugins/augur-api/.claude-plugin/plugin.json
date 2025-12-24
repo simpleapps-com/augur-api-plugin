@@ -1,7 +1,7 @@
 {
     "name": "augur-api",
     "description": "augur-api plugin for Claude Code",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "skills": [
         "./skills/augur-api",
         "./skills/agr_info",

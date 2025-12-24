@@ -1,7 +1,7 @@
 ---
 name: Legacy API
 description: Use when working with address, also bought, alternate code, attrib items, attrib names, attrib names x attrib values, attrib names x item category, attrib values, branch, code p21, company, contacts, contacts x ship to, coupons, creditcard processor, ctl inv mast hazmat detail, customer, customer pastpurchase, health check, inv accessory, inv loc, inv loc stock status, inv mast, inv mast 15, inv mast attributes, inv mast links, inv mast meta, inv mast msds, inv mast primarysupplier, inv mast tags, inv mast ud, inv mast web desc, inv mast x restricted class, inv period usage, inv sub, inv xref, inventory supplier, inventory supplier x loc, item category, item category hierarchy, item category hierarchy delete audit, item category image, item category link, item category set, item category text, item category x inv mast, item conversion, item options hdr, item options line, item package type, item personalization hdr, item personalization line, item uom, job price bin, job price customer shipto, job price hdr, job price line, job price value, location, messages, modified dates, modified pricing, oe hdr, oe hdr notepad, oe line, oe line labor, oe line service labor, oe pick ticket, orders, package type, packing basis, payment types, price family, profit sharing, seed, service labor, service labor rate, service technician, service technician x labor, ship to, ship to salesrep, ship to ud, state, system setting, terms, unit of measure, users, web display type, web orders meta, or making API calls to https://legacy.augur-api.com.
-version: 1.0.2
+version: 1.0.3
 ---
 
 # Legacy
