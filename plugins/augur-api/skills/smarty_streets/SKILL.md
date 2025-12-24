@@ -1,3 +1,9 @@
+---
+name: Smarty Streets API
+description: Use when working with health check, seed, street, or making API calls to https://smarty-streets.augur-api.com.
+version: 1.0.1
+---
+
 # Smarty Streets
 
 Service-specific knowledge for smarty_streets microservice.

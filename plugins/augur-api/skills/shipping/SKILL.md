@@ -1,3 +1,9 @@
+---
+name: Shipping API
+description: Use when working with health check, rates, or making API calls to https://shipping.augur-api.com.
+version: 1.0.1
+---
+
 # Shipping
 
 Service-specific knowledge for shipping microservice.

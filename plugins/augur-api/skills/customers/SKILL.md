@@ -1,3 +1,9 @@
+---
+name: Customers API
+description: Use when working with contact role, contacts, contacts ud, contacts x ship to, customer, customer language, customer ud, customer x restricted class, health check, invoices, oe contacts customer, orders, purchased items, quotes, rewards program, seed, ship to, ship to ud, sync tracking hdr, sync tracking line, or making API calls to https://customers.augur-api.com.
+version: 1.0.1
+---
+
 # Customers
 
 Service-specific knowledge for customers microservice.

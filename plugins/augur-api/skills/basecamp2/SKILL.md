@@ -1,3 +1,9 @@
+---
+name: Basecamp2 API
+description: Use when working with basecamp2 api, cluster hdr, cluster lines, comments, embeddings, health check, people, projects, seed, todolist, todos, todos summary, topics, or making API calls to https://basecamp2.augur-api.com.
+version: 1.0.1
+---
+
 # Basecamp2
 
 Service-specific knowledge for basecamp2 microservice.

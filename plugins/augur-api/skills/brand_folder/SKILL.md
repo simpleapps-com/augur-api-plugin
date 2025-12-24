@@ -1,3 +1,9 @@
+---
+name: Brand Folder API
+description: Use when working with assets, assets x attachments, assets x categories, assets x items, assets x labels, assets x tags, attachments, brand folders, categories, collections, health check, items, labels, organizations, rest api, sections, seed, tags, or making API calls to https://brand-folder.augur-api.com.
+version: 1.0.1
+---
+
 # Brand Folder
 
 Service-specific knowledge for brand_folder microservice.

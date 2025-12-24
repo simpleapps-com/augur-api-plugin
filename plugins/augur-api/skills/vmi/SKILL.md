@@ -1,3 +1,9 @@
+---
+name: Vmi API
+description: Use when working with distributors, health check, inv profile hdr, inv profile line, inv warehouse, products, restock hdr, restock line, sections, seed, usage hdr, usage line, usage line warranty, warehouse, warehouse x users, or making API calls to https://vmi.augur-api.com.
+version: 1.0.1
+---
+
 # Vmi
 
 Service-specific knowledge for vmi microservice.

@@ -1,3 +1,9 @@
+---
+name: Agr Site API
+description: Use when working with basecamp, basecamp comments, basecamp summary, basecamp threads, basecamp todos, commerce, data type context, fyxer transcript hdr, fyxer transcript line, general, geo codes postal codes, goog mc, health check, items, joomla, legacy, meta files hdr, meta files line, notifications, open search, orders, p21 apis, pricing, profit sharing hdr, profit sharing line, seed, settings, sites, training conv, training msg, training set, vendors, or making API calls to https://agr-site.augur-api.com.
+version: 1.0.1
+---
+
 # Agr Site
 
 Service-specific knowledge for agr_site microservice.

@@ -1,3 +1,9 @@
+---
+name: Ups API
+description: Use when working with address validation, health check, rates, seed, ups oauth api, or making API calls to https://ups.augur-api.com.
+version: 1.0.1
+---
+
 # Ups
 
 Service-specific knowledge for ups microservice.

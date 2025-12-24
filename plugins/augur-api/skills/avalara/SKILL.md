@@ -1,3 +1,9 @@
+---
+name: Avalara API
+description: Use when working with health check, rates, or making API calls to https://avalara.augur-api.com.
+version: 1.0.1
+---
+
 # Avalara
 
 Service-specific knowledge for avalara microservice.

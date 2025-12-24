@@ -1,3 +1,9 @@
+---
+name: Nexus API
+description: Use when working with bin transfer hdr, bin transfer line, health check, purchase order receipt, receiving, seed, transfer, transfer receipt, transfer shipping, users, or making API calls to https://nexus.augur-api.com.
+version: 1.0.1
+---
+
 # Nexus
 
 Service-specific knowledge for nexus microservice.
