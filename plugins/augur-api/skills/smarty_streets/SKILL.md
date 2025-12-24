@@ -1,7 +1,7 @@
 ---
 name: Smarty Streets API
 description: Use when working with health check, seed, street, or making API calls to https://smarty-streets.augur-api.com.
-version: 1.0.4
+version: 1.0.5
 ---
 
 # Smarty Streets

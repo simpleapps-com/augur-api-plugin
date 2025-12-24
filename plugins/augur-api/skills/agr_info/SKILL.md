@@ -1,7 +1,7 @@
 ---
 name: Agr Info API
 description: Use when working with akasha, auggie, basecamp, basecamp threads, data type context, health check, joomla, memo, microservices, note, ollama, rubrics, seed, sites, or making API calls to https://agr-info.augur-api.com.
-version: 1.0.4
+version: 1.0.5
 ---
 
 # Agr Info

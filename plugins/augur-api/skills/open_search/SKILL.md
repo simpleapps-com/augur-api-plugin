@@ -1,7 +1,7 @@
 ---
 name: Open Search API
 description: Use when working with health check, item search, item search attributes, item search meta, items, query string, query string analytics, query string redirect, search options, seed, suggestions, or making API calls to https://open-search.augur-api.com.
-version: 1.0.4
+version: 1.0.5
 ---
 
 # Open Search

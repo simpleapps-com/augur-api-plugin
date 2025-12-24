@@ -1,7 +1,7 @@
 ---
 name: Payments API
 description: Use when working with element, health check, moneris, seed, unified, or making API calls to https://payments.augur-api.com.
-version: 1.0.4
+version: 1.0.5
 ---
 
 # Payments

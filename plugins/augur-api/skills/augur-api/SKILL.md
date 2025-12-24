@@ -1,7 +1,7 @@
 ---
 name: Augur Api
 description: Use when working with Augur APIs, agr_info, agr_site, agr_work, avalara, basecamp2, brand_folder, commerce, customers, gregorovich, items, joomla, legacy, logistics, nexus, open_search, orders, p21_apis, p21_core, p21_pim, p21_sism, payments, pricing, shipping, slack, smarty_streets, ups, vmi, or making API calls to *.augur-api.com.
-version: 1.0.4
+version: 1.0.5
 ---
 
 # Augur Api

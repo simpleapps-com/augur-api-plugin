@@ -71,7 +71,7 @@ Once installed, Claude Code automatically loads relevant skills when you:
 
 ## Version
 
-1.0.4
+1.0.5
 
 ## License
 
