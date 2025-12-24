@@ -1,7 +1,7 @@
 ---
 name: Agr Work API
 description: Use when working with health check, seed, or making API calls to https://agr-work.augur-api.com.
-version: 1.0.3
+version: 1.0.4
 ---
 
 # Agr Work

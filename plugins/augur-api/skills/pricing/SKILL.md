@@ -1,7 +1,7 @@
 ---
 name: Pricing API
 description: Use when working with health check, job price bin, job price customer shipto, job price hdr, job price line, legacy api price, price book, price book x library, price check, price engine, price engine calc, price family, price family x restricted class, price library, price library x cust x cmpy, price method x customer, price page, price page dealer commission, price page item, price page po cost calc, price page pricefam, price page prodgrp, price page secondary rebate, price page suppdisc, price page supplier, price page type x company, price page x book, price source x company, seed, sync tracking hdr, sync tracking line, tax engine, tax group hdr, tax group hdr zip, tax group line, tax jurisdiction, or making API calls to https://pricing.augur-api.com.
-version: 1.0.3
+version: 1.0.4
 ---
 
 # Pricing

@@ -1,35 +1,5 @@
 {
     "name": "augur-api",
     "description": "augur-api plugin for Claude Code",
-    "version": "1.0.3",
-    "skills": [
-        "./skills/augur-api",
-        "./skills/agr_info",
-        "./skills/agr_site",
-        "./skills/agr_work",
-        "./skills/avalara",
-        "./skills/basecamp2",
-        "./skills/brand_folder",
-        "./skills/commerce",
-        "./skills/customers",
-        "./skills/gregorovich",
-        "./skills/items",
-        "./skills/joomla",
-        "./skills/legacy",
-        "./skills/logistics",
-        "./skills/nexus",
-        "./skills/open_search",
-        "./skills/orders",
-        "./skills/p21_apis",
-        "./skills/p21_core",
-        "./skills/p21_pim",
-        "./skills/p21_sism",
-        "./skills/payments",
-        "./skills/pricing",
-        "./skills/shipping",
-        "./skills/slack",
-        "./skills/smarty_streets",
-        "./skills/ups",
-        "./skills/vmi"
-    ]
+    "version": "1.0.4"
 }

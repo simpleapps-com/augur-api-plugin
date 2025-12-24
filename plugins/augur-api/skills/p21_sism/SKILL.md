@@ -1,7 +1,7 @@
 ---
 name: P21 Sism API
 description: Use when working with cc tables, health check, imp address, imp ar payment details, imp ar receipts, imp ar receipts detail, imp contacts, imp creditcard payment details, imp customer, imp customer notepad, imp document line bin, imp document line lot, imp document line lot bin xref, imp document line serial, imp finished good lot, imp inv adj hdr, imp inv adj line, imp inv ret ship hdr, imp inv ret ship line, imp inventory receipt attribute value, imp inventory receipts hdr, imp lot x lot attribute value, imp note area, imp note area oe line, imp oe hdr, imp oe hdr notepad, imp oe hdr salesrep, imp oe hdr web, imp oe line, imp oe line notepad, imp oe line schedule, imp oe line service, imp oe line service labor, imp oe line service labor time, imp oe line service part, imp oe pick ticket, imp oe pick ticket detail, imp oe po xref, imp oe schedule, imp oe schedule detail, imp po hdr, imp po hdr notepad, imp po line, imp po line notepad, imp prod order hdr, imp prod order line, imp prod order line comp labor, imp prod order line component, imp rebate payments detail, imp rma receipt hdr import, imp rma receipt line import, imp ship to, imp tag document line, imp tag hdr, imp transfer hdr, imp transfer line, imp transfer ship hdr, imp transfer ship line, impexp source, import, import suspense settings, scheduled import def, scheduled import details, scheduled import master, scheduled import metadata, seed, transaction set, or making API calls to https://p21-sism.augur-api.com.
-version: 1.0.3
+version: 1.0.4
 ---
 
 # P21 Sism
