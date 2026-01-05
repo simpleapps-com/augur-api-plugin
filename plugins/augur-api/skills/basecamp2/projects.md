@@ -1,50 +1,54 @@
-# Todos
+# Projects
 
 Datatype for basecamp2 microservice.
 
-## GET /todos/{id}/comments
+## GET /projects/{id}
 
-List Comments for Todo
+Get Project by ID
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| id | path | Yes | integer | Todo ID |
+| id | path | Yes | integer | Project ID |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+
+---
+
+## GET /projects
+
+List Projects
+
+### Parameters
+
+| Name | Location | Required | Type | Description |
+|------|----------|----------|------|-------------|
+| Authorization | header | Yes | string | Bearer token (JWT) |
+| archivedFlag | query | No | string | Filter by archived status (Y/N) |
 | limit | query | No | int | Limit number of results (Default: 100) |
 | offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Sort field (Default: id|asc) |
+| orderBy | query | No | string | Sort field (Default: name|asc) |
+| trashedFlag | query | No | string | Filter by trashed status (Y/N) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /todos/{id}
+## GET /projects/{id}/todos
 
-Get Todo Details
+List Todos for Project
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| id | path | Yes | integer | Todo ID |
-| x-site-id | header | Yes | string | siteId provided by SimpleApps |
-
----
-
-## GET /todos
-
-List Todos
-
-### Parameters
-
-| Name | Location | Required | Type | Description |
-|------|----------|----------|------|-------------|
-| Authorization | header | Yes | string | Bearer token (JWT) |
-| limit | query | No | int | Limit number of results (Default: 10) |
+| assigneeId | query | No | integer | Filter by assignee (Person ID) |
+| completedFlag | query | No | string | Filter by completion status (Y/N) |
+| id | path | Yes | integer | Project ID |
+| limit | query | No | int | Limit number of results (Default: 100) |
 | offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Order By (Default: id|ASC) |
+| orderBy | query | No | string | Sort field (Default: position|asc) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

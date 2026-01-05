@@ -1,6 +1,6 @@
 ---
 name: Payments API
-description: Use when working with element, health check, moneris, seed, unified, or making API calls to https://payments.augur-api.com.
+description: Use when working with element, health check, moneris, paytrace, seed, unified, or making API calls to https://payments.augur-api.com.
 version: 1.0.5
 ---
 
@@ -38,6 +38,16 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 |--------|----------|-------------|---------|
 | GET | /moneris/pre-auth-complete | Completes a pre-authorization transaction. | [moneris.md](moneris.md#get-monerispre-auth-complete) |
 | GET | /moneris/pre-auth | Pre-authorizes a transaction. | [moneris.md](moneris.md#get-monerispre-auth) |
+
+### paytrace
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| POST | /paytrace/authorization | Authorize a credit card transaction (pre-auth). | [paytrace.md](paytrace.md#post-paytraceauthorization) |
+| POST | /paytrace/capture | Capture a previously authorized transaction. | [paytrace.md](paytrace.md#post-paytracecapture) |
+| POST | /paytrace/refund | Refund a settled transaction. | [paytrace.md](paytrace.md#post-paytracerefund) |
+| POST | /paytrace/sale | Process a sale transaction (authorize and capture). | [paytrace.md](paytrace.md#post-paytracesale) |
+| POST | /paytrace/void | Void a pending transaction. | [paytrace.md](paytrace.md#post-paytracevoid) |
 
 ### unified
 

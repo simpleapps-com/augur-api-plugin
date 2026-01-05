@@ -1,50 +1,56 @@
-# Todos
+# Todos Events
 
 Datatype for basecamp2 microservice.
 
-## GET /todos/{id}/comments
+## GET /todos/{id}/events
 
-List Comments for Todo
+List Events for a Todo
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| id | path | Yes | integer | Todo ID |
+| eventTypeCd | query | No | int | Filter by event type (1=created, 2=comment, 3=completed) |
+| id | path | Yes | integer | Todos ID |
 | limit | query | No | int | Limit number of results (Default: 100) |
 | offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Sort field (Default: id|asc) |
+| orderBy | query | No | string | Sort field (Default: event_at|desc) |
+| peopleId | query | No | integer | Filter by person ID |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /todos/{id}
+## GET /todos/{id}/events/{eventNum}
 
-Get Todo Details
+Get Todo Event Details
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| id | path | Yes | integer | Todo ID |
+| event_num | path | Yes | integer | Event sequence number (0=created, 1+=comments) |
+| id | path | Yes | integer | Todos ID |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /todos
+## GET /events
 
-List Todos
+List Todo Events
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| limit | query | No | int | Limit number of results (Default: 10) |
+| eventTypeCd | query | No | int | Filter by event type (1=created, 2=comment, 3=completed) |
+| id | query | No | integer | Filter by todos ID |
+| limit | query | No | int | Limit number of results (Default: 100) |
 | offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Order By (Default: id|ASC) |
+| orderBy | query | No | string | Sort field (Default: event_at|desc) |
+| peopleId | query | No | integer | Filter by person ID |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

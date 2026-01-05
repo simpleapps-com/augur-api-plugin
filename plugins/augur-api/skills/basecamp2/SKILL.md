@@ -1,6 +1,6 @@
 ---
 name: Basecamp2 API
-description: Use when working with basecamp2 api, cluster hdr, cluster lines, comments, embeddings, health check, people, projects, seed, todolist, todos, todos summary, topics, or making API calls to https://basecamp2.augur-api.com.
+description: Use when working with basecamp2 api, cluster hdr, cluster lines, comments, embeddings, health check, people, projects, seed, todolist, todos, todos events, todos investigation, todos metrics, todos summary, topics, or making API calls to https://basecamp2.augur-api.com.
 version: 1.0.5
 ---
 
@@ -19,18 +19,59 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 ## API Endpoints
 
+### comments
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /comments/{id} | Get Comment by ID | [comments.md](comments.md#get-commentsid) |
+
 ### health_check
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
 | GET | /health-check | Health Check | [health_check.md](health_check.md#get-health-check) |
 
+### people
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /people/{id} | Get Person by ID | [people.md](people.md#get-peopleid) |
+| GET | /people | List People with filters | [people.md](people.md#get-people) |
+| GET | /people/{personId}/projects/{projectId}/todos | List Todos for Person on Project | [people.md](people.md#get-peoplepersonIdprojectsprojectIdtodos) |
+| GET | /people/{id}/todos | List Todos for Person | [people.md](people.md#get-peopleidtodos) |
+
+### projects
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /projects/{id} | Get Project by ID | [projects.md](projects.md#get-projectsid) |
+| GET | /projects | List Projects | [projects.md](projects.md#get-projects) |
+| GET | /projects/{id}/todos | List Todos for Project | [projects.md](projects.md#get-projectsidtodos) |
+
 ### todos
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
+| GET | /todos/{id}/comments | List Comments for Todo | [todos.md](todos.md#get-todosidcomments) |
 | GET | /todos/{id} | Get Todo Details | [todos.md](todos.md#get-todosid) |
 | GET | /todos | List Todos | [todos.md](todos.md#get-todos) |
+
+### todos_events
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /todos/{id}/events | List Events for a Todo | [todos_events.md](todos_events.md#get-todosidevents) |
+| GET | /todos/{id}/events/{eventNum} | Get Todo Event Details | [todos_events.md](todos_events.md#get-todosideventseventNum) |
+| GET | /events | List Todo Events | [todos_events.md](todos_events.md#get-events) |
+
+### todos_metrics
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /people/{id}/metrics | List Todo Metrics by Person | [todos_metrics.md](todos_metrics.md#get-peopleidmetrics) |
+| GET | /projects/{id}/metrics | List Todo Metrics by Project | [todos_metrics.md](todos_metrics.md#get-projectsidmetrics) |
+| GET | /todos/{id}/metrics | Get Todo Metrics Detail | [todos_metrics.md](todos_metrics.md#get-todosidmetrics) |
+| GET | /metrics | List Todo Metrics | [todos_metrics.md](todos_metrics.md#get-metrics) |
 
 ### todos_summary
 
