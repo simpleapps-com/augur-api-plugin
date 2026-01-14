@@ -41,6 +41,8 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
 | GET | /health-check | Health Check | [health_check.md](health_check.md#get-health-check) |
+| GET | /ping | Ping | [health_check.md](health_check.md#get-ping) |
+| GET | /whoami | Whoami | [health_check.md](health_check.md#get-whoami) |
 
 ### meta_files_hdr
 

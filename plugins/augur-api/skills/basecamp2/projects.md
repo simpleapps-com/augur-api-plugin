@@ -34,6 +34,44 @@ List Projects
 
 ---
 
+## GET /projects/{projectId}/todolists/{todolistId}/todos
+
+List Todos in Todolist within Project
+
+### Parameters
+
+| Name | Location | Required | Type | Description |
+|------|----------|----------|------|-------------|
+| Authorization | header | Yes | string | Bearer token (JWT) |
+| assigneeId | query | No | integer | Filter by assignee ID |
+| completedFlag | query | No | string | Filter by completion status (Y/N) |
+| limit | query | No | int | Limit number of results (Default: 100) |
+| offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Sort field (Default: id|asc) |
+| projectId | path | Yes | integer | Project ID |
+| todolistId | path | Yes | integer | Todolist ID |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+
+---
+
+## GET /projects/{id}/todolists
+
+List Todolists for Project
+
+### Parameters
+
+| Name | Location | Required | Type | Description |
+|------|----------|----------|------|-------------|
+| Authorization | header | Yes | string | Bearer token (JWT) |
+| completedFlag | query | No | string | Filter by completion status (Y/N) |
+| id | path | Yes | integer | Project ID |
+| limit | query | No | int | Limit number of results (Default: 100) |
+| offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Sort field (Default: id|asc) |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+
+---
+
 ## GET /projects/{id}/todos
 
 List Todos for Project

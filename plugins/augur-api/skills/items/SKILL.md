@@ -108,6 +108,7 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 |--------|----------|-------------|---------|
 | GET | /health-check | Health Check | [health_check.md](health_check.md#get-health-check) |
 | GET | /ping | Ping to get Pong | [health_check.md](health_check.md#get-ping) |
+| GET | /whoami | Whoami | [health_check.md](health_check.md#get-whoami) |
 
 ### internal
 

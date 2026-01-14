@@ -1,6 +1,6 @@
 ---
 name: Basecamp2 API
-description: Use when working with basecamp2 api, cluster hdr, cluster lines, comments, embeddings, health check, people, projects, seed, todolist, todos, todos events, todos investigation, todos metrics, todos summary, topics, or making API calls to https://basecamp2.augur-api.com.
+description: Use when working with basecamp2 api, cluster hdr, cluster lines, comments, embeddings, health check, people, projects, seed, todolist, todos, todos events, todos investigation, todos metrics, todos sessions, todos summary, topics, or making API calls to https://basecamp2.augur-api.com.
 version: 1.0.5
 ---
 
@@ -24,6 +24,7 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
 | GET | /comments/{id} | Get Comment by ID | [comments.md](comments.md#get-commentsid) |
+| GET | /comments | List Comments | [comments.md](comments.md#get-comments) |
 
 ### health_check
 
@@ -46,7 +47,16 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 |--------|----------|-------------|---------|
 | GET | /projects/{id} | Get Project by ID | [projects.md](projects.md#get-projectsid) |
 | GET | /projects | List Projects | [projects.md](projects.md#get-projects) |
+| GET | /projects/{projectId}/todolists/{todolistId}/todos | List Todos in Todolist within Project | [projects.md](projects.md#get-projectsprojectIdtodoliststodolistIdtodos) |
+| GET | /projects/{id}/todolists | List Todolists for Project | [projects.md](projects.md#get-projectsidtodolists) |
 | GET | /projects/{id}/todos | List Todos for Project | [projects.md](projects.md#get-projectsidtodos) |
+
+### todolist
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /todolists/{id} | Get Todolist Details | [todolist.md](todolist.md#get-todolistsid) |
+| GET | /todolists | List Todolists | [todolist.md](todolist.md#get-todolists) |
 
 ### todos
 
@@ -72,6 +82,16 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | GET | /projects/{id}/metrics | List Todo Metrics by Project | [todos_metrics.md](todos_metrics.md#get-projectsidmetrics) |
 | GET | /todos/{id}/metrics | Get Todo Metrics Detail | [todos_metrics.md](todos_metrics.md#get-todosidmetrics) |
 | GET | /metrics | List Todo Metrics | [todos_metrics.md](todos_metrics.md#get-metrics) |
+
+### todos_sessions
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /todos/{id}/sessions | List Sessions for Todo | [todos_sessions.md](todos_sessions.md#get-todosidsessions) |
+| POST | /todos/{id}/sessions | Create Session for Todo | [todos_sessions.md](todos_sessions.md#post-todosidsessions) |
+| GET | /todos/{id}/sessions/{sessionId} | Get Session Details | [todos_sessions.md](todos_sessions.md#get-todosidsessionssessionId) |
+| PUT | /todos/{id}/sessions/{sessionId} | Update Session | [todos_sessions.md](todos_sessions.md#put-todosidsessionssessionId) |
+| DELETE | /todos/{id}/sessions/{sessionId} | Delete Session | [todos_sessions.md](todos_sessions.md#delete-todosidsessionssessionId) |
 
 ### todos_summary
 

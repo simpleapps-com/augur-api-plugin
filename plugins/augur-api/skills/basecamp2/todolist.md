@@ -1,41 +1,24 @@
-# Todos
+# Todolist
 
 Datatype for basecamp2 microservice.
 
-## GET /todos/{id}/comments
+## GET /todolists/{id}
 
-List Comments for Todo
-
-### Parameters
-
-| Name | Location | Required | Type | Description |
-|------|----------|----------|------|-------------|
-| Authorization | header | Yes | string | Bearer token (JWT) |
-| id | path | Yes | integer | Todo ID |
-| limit | query | No | int | Limit number of results (Default: 100) |
-| offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Sort field (Default: id|asc) |
-| x-site-id | header | Yes | string | siteId provided by SimpleApps |
-
----
-
-## GET /todos/{id}
-
-Get Todo Details
+Get Todolist Details
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| id | path | Yes | integer | Todo ID |
+| id | path | Yes | integer | Todolist ID |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /todos
+## GET /todolists
 
-List Todos
+List Todolists
 
 ### Parameters
 
@@ -44,12 +27,10 @@ List Todos
 | Authorization | header | Yes | string | Bearer token (JWT) |
 | assigneeId | query | No | integer | Filter by assignee ID |
 | completedFlag | query | No | string | Filter by completion status (Y/N) |
-| dueAt | query | No | string | Filter by due date |
 | limit | query | No | int | Limit number of results (Default: 100) |
 | offset | query | No | int | Starting offset results (Default: 0) |
 | orderBy | query | No | string | Sort field (Default: id|asc) |
 | projectsId | query | No | integer | Filter by project ID |
-| todolistId | query | No | integer | Filter by todolist ID |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

@@ -26,6 +26,7 @@ List Cash Drawers
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
 | companyId | query | No | string | Company ID |
+| drawerOpen | query | No | string | Filter by drawer open status (Y or N) |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
 | orderBy | query | No | string | Order By (Default: cash_drawer_uid|ASC) |
