@@ -1,6 +1,6 @@
 ---
 name: Items API
-description: Use when working with alternate code, assembly hdr, assembly line, attribute, attribute group, attribute group x attribute value, attribute value, attribute x attribute group, bin, brands, brands x items, categories, contracts items, data type context, health check, internal, inv accessory, inv adj hdr, inv bin, inv loc, inv loc stock status, inv mast, inv mast 15, inv mast attributes, inv mast context, inv mast external, inv mast faq, inv mast language, inv mast links, inv mast lot, inv mast msds, inv mast similarity hdr, inv mast similarity line, inv mast sub parts, inv mast ud, inv mast x restricted class, inv period usage, inv sub, inv xref, inventory receipts hdr, inventory supplier, inventory supplier x loc, item attribute value, item catalog, item catalog def, item catalog def detail, item category, item category hierarchy, item category hierarchy delete audit, item category image, item category link, item category meaning, item category text, item category ud, item category x inv mast, item conversion, item favorites, item meaning, item metrics, item package type, item price hash, item uom, item variant hdr, item variant line, item wishlist hdr, item wishlist line, package type, promotional group det, promotional group hdr, refresh items log, seed, sync tracking hdr, sync tracking line, unit of measure, web display type, or making API calls to https://items.augur-api.com.
+description: Use when working with alternate code, assembly hdr, assembly line, attribute, attribute group, attribute group x attribute value, attribute value, attribute x attribute group, bin, brands, brands x items, categories, contracts items, data type context, health check, internal, inv accessory, inv adj hdr, inv bin, inv loc, inv loc stock status, inv mast, inv mast 15, inv mast attributes, inv mast context, inv mast external, inv mast faq, inv mast language, inv mast links, inv mast lot, inv mast msds, inv mast similarity hdr, inv mast similarity line, inv mast sub parts, inv mast ud, inv mast x restricted class, inv period usage, inv sub, inv xref, inventory receipts hdr, inventory supplier, inventory supplier x loc, item attribute value, item catalog, item catalog def, item catalog def detail, item category, item category hierarchy, item category hierarchy delete audit, item category image, item category link, item category meaning, item category text, item category ud, item category x inv mast, item conversion, item favorites, item meaning, item metrics, item package type, item price hash, item uom, item variant hdr, item variant hdr x attribute, item variant line, item wishlist hdr, item wishlist line, package type, promotional group det, promotional group hdr, refresh items log, seed, sync tracking hdr, sync tracking line, unit of measure, web display type, or making API calls to https://items.augur-api.com.
 version: 1.0.5
 ---
 
@@ -69,21 +69,13 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
+| GET | /brands/{brandsUid}/attributes | List attributes for brand items | [brands.md](brands.md#get-brandsbrandsUidattributes) |
 | GET | /brands/{brandsUid} | Get Brands Details | [brands.md](brands.md#get-brandsbrandsUid) |
 | PUT | /brands/{brandsUid} | Update Brands | [brands.md](brands.md#put-brandsbrandsUid) |
 | DELETE | /brands/{brandsUid} | DELETE Brands | [brands.md](brands.md#delete-brandsbrandsUid) |
 | GET | /brands | List Brands | [brands.md](brands.md#get-brands) |
 | POST | /brands | Create Brands | [brands.md](brands.md#post-brands) |
-
-### brands_x_items
-
-| Method | Endpoint | Description | Details |
-|--------|----------|-------------|---------|
-| GET | /brands/{brandsUid}/items/{brandsXItemsUid} | Get Brands X Items Details | [brands_x_items.md](brands_x_items.md#get-brandsbrandsUiditemsbrandsXItemsUid) |
-| PUT | /brands/{brandsUid}/items/{brandsXItemsUid} | Update Brands X Items | [brands_x_items.md](brands_x_items.md#put-brandsbrandsUiditemsbrandsXItemsUid) |
-| DELETE | /brands/{brandsUid}/items/{brandsXItemsUid} | DELETE Brands X Items | [brands_x_items.md](brands_x_items.md#delete-brandsbrandsUiditemsbrandsXItemsUid) |
-| GET | /brands/{brandsUid}/items | List Brands X Items | [brands_x_items.md](brands_x_items.md#get-brandsbrandsUiditems) |
-| POST | /brands/{brandsUid}/items | Create Brands X Items | [brands_x_items.md](brands_x_items.md#post-brandsbrandsUiditems) |
+| GET | /brands/{brandsUid}/items | List items for a brand | [brands.md](brands.md#get-brandsbrandsUiditems) |
 
 ### categories
 
@@ -212,10 +204,11 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /item-favorites/{usersId} | List the item favorites for a user | [item_favorites.md](item_favorites.md#get-item-favoritesusersId) |
-| POST | /item-favorites/{usersId} | Create a new item favorite | [item_favorites.md](item_favorites.md#post-item-favoritesusersId) |
-| PUT | /item-favorites/{usersId}/{invMastUid} | Update an item favorite | [item_favorites.md](item_favorites.md#put-item-favoritesusersIdinvMastUid) |
-| DELETE | /item-favorites/{usersId}/{invMastUid} | Soft Delete an item from a user's favorites | [item_favorites.md](item_favorites.md#delete-item-favoritesusersIdinvMastUid) |
+| GET | /item-favorites/{usersId}/items | List the item favorites for a user | [item_favorites.md](item_favorites.md#get-item-favoritesusersIditems) |
+| POST | /item-favorites/{usersId}/items | Create item favorites | [item_favorites.md](item_favorites.md#post-item-favoritesusersIditems) |
+| GET | /item-favorites/{usersId}/items/{invMastUid} | Get a single item favorite | [item_favorites.md](item_favorites.md#get-item-favoritesusersIditemsinvMastUid) |
+| PUT | /item-favorites/{usersId}/items/{invMastUid} | Toggle an item favorite active/inactive | [item_favorites.md](item_favorites.md#put-item-favoritesusersIditemsinvMastUid) |
+| DELETE | /item-favorites/{usersId}/items/{invMastUid} | Soft Delete an item from a user's favorites | [item_favorites.md](item_favorites.md#delete-item-favoritesusersIditemsinvMastUid) |
 
 ### item_uom
 
@@ -231,8 +224,20 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | GET | /variants/{itemVariantHdrUid} | Get Item Variant Header Details | [item_variant_hdr.md](item_variant_hdr.md#get-variantsitemVariantHdrUid) |
 | PUT | /variants/{itemVariantHdrUid} | Update Item Variant Header | [item_variant_hdr.md](item_variant_hdr.md#put-variantsitemVariantHdrUid) |
 | DELETE | /variants/{itemVariantHdrUid} | DELETE Item Variant Header | [item_variant_hdr.md](item_variant_hdr.md#delete-variantsitemVariantHdrUid) |
+| GET | /variants/{itemVariantHdrUid}/doc | Get Variant Doc | [item_variant_hdr.md](item_variant_hdr.md#get-variantsitemVariantHdrUiddoc) |
 | GET | /variants | List Item Variant Headers | [item_variant_hdr.md](item_variant_hdr.md#get-variants) |
 | POST | /variants | Create Item Variant Header | [item_variant_hdr.md](item_variant_hdr.md#post-variants) |
+| GET | /variants/{itemVariantHdrUid}/similar | Find Similar Items for Variant Header | [item_variant_hdr.md](item_variant_hdr.md#get-variantsitemVariantHdrUidsimilar) |
+
+### item_variant_hdr_x_attribute
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /variants/{itemVariantHdrUid}/attributes/{attributeUid} | Get variant attribute link details | [item_variant_hdr_x_attribute.md](item_variant_hdr_x_attribute.md#get-variantsitemVariantHdrUidattributesattributeUid) |
+| PUT | /variants/{itemVariantHdrUid}/attributes/{attributeUid} | Update variant attribute link | [item_variant_hdr_x_attribute.md](item_variant_hdr_x_attribute.md#put-variantsitemVariantHdrUidattributesattributeUid) |
+| DELETE | /variants/{itemVariantHdrUid}/attributes/{attributeUid} | Remove attribute from variant | [item_variant_hdr_x_attribute.md](item_variant_hdr_x_attribute.md#delete-variantsitemVariantHdrUidattributesattributeUid) |
+| GET | /variants/{itemVariantHdrUid}/attributes | List attributes for variant | [item_variant_hdr_x_attribute.md](item_variant_hdr_x_attribute.md#get-variantsitemVariantHdrUidattributes) |
+| POST | /variants/{itemVariantHdrUid}/attributes | Add attribute to variant | [item_variant_hdr_x_attribute.md](item_variant_hdr_x_attribute.md#post-variantsitemVariantHdrUidattributes) |
 
 ### item_variant_line
 

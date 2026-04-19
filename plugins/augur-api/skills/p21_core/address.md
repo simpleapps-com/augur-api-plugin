@@ -11,7 +11,7 @@ Get Address Details
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| address | path | Yes | integer | address |
+| id | path | Yes | integer | id |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
@@ -28,6 +28,7 @@ Get Corporate Address List
 | id | path | Yes | integer | id |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: address_uid|ASC) |
 | q | query | No | string | Search Query |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
@@ -89,6 +90,7 @@ List Addresses
 | enabledCd | query | No | int | Shipping Method Enabled Code (enabled_cd) [704|705|700|Blank] |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: address_uid|ASC) |
 | statusCd | query | No | int | Status Code (status_cd) [(704)|705|700] |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 

@@ -14,6 +14,7 @@ List P21 Codes
 | codeNoList | query | No | string | CSV is code_nos to limit results |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: code_p21_uid|ASC) |
 | q | query | Yes | string | search query |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 

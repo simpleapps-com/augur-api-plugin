@@ -42,6 +42,7 @@ list of categories
 | Authorization | header | Yes | string | Bearer token (JWT) |
 | limit | query | No | integer | Maximum number of records to return (default: 10) |
 | offset | query | No | integer | Number of records to skip (default: 0) |
+| orderBy | query | No | string | Order By (Default: item_category_uid|ASC) |
 | q | query | No | string | Search query for filtering categories by id or description |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 

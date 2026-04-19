@@ -28,6 +28,7 @@ List Customer Orders
 | Authorization | header | Yes | string | Bearer token (JWT) |
 | address_id | path | Yes | integer | oe_hdr.address_id |
 | cancelFlag | query | No | string | cancel flag [Y|N] (default N) |
+| contactId | query | No | string | filter by contact_id |
 | customer_id | path | Yes | integer | oe_hdr.customer_id |
 | deleteFlag | query | No | string | delete flag [Y|N] (default N) |
 | fullDocument | query | No | string | fullDocument vs summary [Y|N] (default Y) |

@@ -44,6 +44,7 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | GET | /customer/{customerId}/doc | get the customer document | [customer.md](customer.md#get-customercustomerIddoc) |
 | GET | /customer/{customerId}/ship-to | Lookup Customer ShipTo | [customer.md](customer.md#get-customercustomerIdship-to) |
 | POST | /customer/{customerId}/ship-to | Create new ship_to for customer_id | [customer.md](customer.md#post-customercustomerIdship-to) |
+| GET | /customer/{customerId}/tags | List Customer Tags | [customer.md](customer.md#get-customercustomerIdtags) |
 | GET | /customer | list the customer documents | [customer.md](customer.md#get-customer) |
 | GET | /customer/lookup | Lookup Customer summary | [customer.md](customer.md#get-customerlookup) |
 

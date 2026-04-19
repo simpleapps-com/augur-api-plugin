@@ -34,8 +34,8 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /cash_drawer/{cashDrawerUid} | Get Cash Drawer Details | [cash_drawer.md](cash_drawer.md#get-cash_drawercashDrawerUid) |
-| GET | /cash_drawer | List Cash Drawers | [cash_drawer.md](cash_drawer.md#get-cash_drawer) |
+| GET | /cash-drawer/{cashDrawerUid} | Get Cash Drawer Details | [cash_drawer.md](cash_drawer.md#get-cash-drawercashDrawerUid) |
+| GET | /cash-drawer | List Cash Drawers | [cash_drawer.md](cash_drawer.md#get-cash-drawer) |
 
 ### code_p21
 

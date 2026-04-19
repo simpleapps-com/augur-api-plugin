@@ -32,6 +32,7 @@ List bins for a specific location
 | limit | query | No | int | Limit number of results (Default: 10) |
 | location_id | path | Yes | integer | location.location_id |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: inv_bin_uid|ASC) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
@@ -50,6 +51,7 @@ List all items in a specific bin
 | limit | query | No | int | Limit number of results (Default: 10) |
 | location_id | path | Yes | integer | location.location_id |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: inv_bin_uid|ASC) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
@@ -68,6 +70,7 @@ List all items in bins at a location
 | limit | query | No | int | Limit number of results (Default: 10) |
 | location_id | path | Yes | integer | location.location_id |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: inv_bin_uid|ASC) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

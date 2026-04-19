@@ -2,7 +2,7 @@
 
 Datatype for p21_sism microservice.
 
-## POST /scheduled-import-master/{scheduled_import_master_uid}/metadata/sftp
+## POST /scheduled-import-master/{scheduledImportMasterUid}/metadata/sftp
 
 Create SFTP metadata for a scheduled import master
 

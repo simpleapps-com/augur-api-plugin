@@ -2,7 +2,7 @@
 
 Datatype for p21_core microservice.
 
-## GET /cash_drawer/{cashDrawerUid}
+## GET /cash-drawer/{cashDrawerUid}
 
 Get Cash Drawer Details
 
@@ -16,7 +16,7 @@ Get Cash Drawer Details
 
 ---
 
-## GET /cash_drawer
+## GET /cash-drawer
 
 List Cash Drawers
 

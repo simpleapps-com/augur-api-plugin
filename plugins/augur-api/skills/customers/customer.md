@@ -95,6 +95,20 @@ Create new ship_to for customer_id
 
 ---
 
+## GET /customer/{customerId}/tags
+
+List Customer Tags
+
+### Parameters
+
+| Name | Location | Required | Type | Description |
+|------|----------|----------|------|-------------|
+| Authorization | header | Yes | string | Bearer token (JWT) |
+| customer_id | path | Yes | integer | customer.customer_id |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+
+---
+
 ## GET /customer
 
 list the customer documents

@@ -29,6 +29,7 @@ List Customer Invoices
 | customer_id | path | Yes | integer | customer.customer_id |
 | limit | query | No | integer | limit (default 10) |
 | offset | query | No | integer | offset (default 0) |
+| paidInFull | query | No | string | filter by paid_in_full_flag (Y/N) |
 | q | query | Yes | string | search query |
 | shipToId | query | No | integer | invoice_hdr.ship_to_id |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |

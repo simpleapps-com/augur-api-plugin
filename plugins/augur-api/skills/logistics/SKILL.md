@@ -1,6 +1,6 @@
 ---
 name: Logistics API
-description: Use when working with health check, seed, shipvia, speedship, or making API calls to https://logistics.augur-api.com.
+description: Use when working with health check, seed, shipvia, speedship, ups, or making API calls to https://logistics.augur-api.com.
 version: 1.0.5
 ---
 
@@ -38,3 +38,9 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
 | GET | /speedship/freight | Get Speedship Freight | [speedship.md](speedship.md#get-speedshipfreight) |
+
+### ups
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /ups/rates | Get UPS Shipping Rates | [ups.md](ups.md#get-upsrates) |

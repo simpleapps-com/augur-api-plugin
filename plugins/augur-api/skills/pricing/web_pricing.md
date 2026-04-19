@@ -1,37 +1,33 @@
-# Location
+# Web Pricing
 
-Datatype for p21_core microservice.
+Datatype for pricing microservice.
 
-## GET /location/{locationId}
+## GET /web-pricing/{webPricingUid}
 
-Get Location Details
+Get Web Pricing Rule
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| includeAddress | query | No | string | Include address data (Y/N) |
-| location_id | path | Yes | number | location_id |
+| web_pricing_uid | path | Yes | integer | web_pricing_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /location
+## GET /web-pricing
 
-List Locations
+List Web Pricing Rules
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| deleteFlag | query | No | string | Delete Flag |
-| includeAddress | query | No | string | Include address data (Y/N) |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Order By (Default: location_id|ASC) |
-| q | query | No | string | Search Query |
+| orderBy | query | No | string | Order By (Default: web_pricing_uid|ASC) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

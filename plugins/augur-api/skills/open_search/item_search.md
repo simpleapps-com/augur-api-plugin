@@ -11,8 +11,6 @@ Perform Item Search
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| cacheSiteId | query | No | string | The SiteId to use for edge caching. (Default: none) |
-| cacheTtl | query | No | integer | TTL for caching. Zero mean no cache. (Default: 0) |
 | classId5ExcludeList | query | No | string | list of inv_mast.class_id5 values to exclude (CSV) |
 | classId5List | query | No | string | list of inv_mast.class_id5 values (CSV) |
 | discontinuedAny | query | No | string | Filter by discontinued status [Y|N] |
@@ -30,6 +28,7 @@ Perform Item Search
 | sourceFieldsList | query | No | string | list of source_fields to return (CSV) |
 | stockStatus | query | No | string | Filter by stock status [in_stock|out_of_stock] |
 | tags | query | No | string | A CSV of tags to filter |
+| variantFilter | query | No | string | Filter variants [primary_only] (Default: blank) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

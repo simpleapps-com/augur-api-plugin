@@ -35,6 +35,7 @@ Get the category details
 | classId5ExcludeList | query | No | string | List of excluded class 5 values (default:blank) |
 | classId5List | query | No | string | List of allowed class 5 values (default:blank) |
 | filters | query | No | string | A JSON representation of the filters [{attributeUid:attributeValueUid}] |
+| includeUd | query | No | string | Include UD table data [Y|N] (Default: N) |
 | item_category_uid | path | Yes | integer | item_category.item_category_uid |
 | orderBy | query | No | string | Select order of the categories Default: item_category_desc|ASC |
 | path | query | No | string | Path to lookup (Default: /) |
@@ -83,6 +84,7 @@ list the items in a category
 | sortBy | query | No | string | Field from Document to sort by (Default: item_id) |
 | stockStatus | query | No | string | Filter by stock status [in_stock|out_of_stock] (Default: blank) |
 | tags | query | No | string | A CSV of tags |
+| variantFilter | query | No | string | Filter variants [primary_only] (Default: blank) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

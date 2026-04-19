@@ -1,6 +1,6 @@
 ---
 name: Pricing API
-description: Use when working with health check, job price bin, job price customer shipto, job price hdr, job price line, legacy api price, price book, price book x library, price check, price engine, price engine calc, price family, price family x restricted class, price library, price library x cust x cmpy, price method x customer, price page, price page dealer commission, price page item, price page po cost calc, price page pricefam, price page prodgrp, price page secondary rebate, price page suppdisc, price page supplier, price page type x company, price page x book, price source x company, seed, sync tracking hdr, sync tracking line, tax engine, tax group hdr, tax group hdr zip, tax group line, tax jurisdiction, or making API calls to https://pricing.augur-api.com.
+description: Use when working with health check, job price bin, job price customer shipto, job price hdr, job price line, legacy api price, price book, price book x library, price check, price engine, price engine calc, price family, price family x restricted class, price library, price library x cust x cmpy, price library x ship to, price method x customer, price page, price page dealer commission, price page item, price page po cost calc, price page pricefam, price page prodgrp, price page secondary rebate, price page suppdisc, price page supplier, price page type x company, price page x book, price source x company, seed, sync tracking hdr, sync tracking line, tax engine, tax group hdr, tax group hdr zip, tax group line, tax jurisdiction, web pricing, web pricing x customer, or making API calls to https://pricing.augur-api.com.
 version: 1.0.5
 ---
 
@@ -45,9 +45,24 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
 | GET | /price-engine | Get Item Price | [price_engine.md](price_engine.md#get-price-engine) |
+| POST | /price-engine | Price multiple items with cart context for group break pricing | [price_engine.md](price_engine.md#post-price-engine) |
 
 ### tax_engine
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
 | POST | /tax-engine | Run Tax Engine | [tax_engine.md](tax_engine.md#post-tax-engine) |
+
+### web_pricing
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /web-pricing/{webPricingUid} | Get Web Pricing Rule | [web_pricing.md](web_pricing.md#get-web-pricingwebPricingUid) |
+| GET | /web-pricing | List Web Pricing Rules | [web_pricing.md](web_pricing.md#get-web-pricing) |
+
+### web_pricing_x_customer
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /web-pricing/{webPricingUid}/customers/{customerId} | Get Web Pricing Customer | [web_pricing_x_customer.md](web_pricing_x_customer.md#get-web-pricingwebPricingUidcustomerscustomerId) |
+| GET | /web-pricing/{webPricingUid}/customers | List Web Pricing Customers | [web_pricing_x_customer.md](web_pricing_x_customer.md#get-web-pricingwebPricingUidcustomers) |

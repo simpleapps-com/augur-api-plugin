@@ -1,53 +1,52 @@
-# State
+# Postal Codes X Shiptos
 
-Datatype for legacy microservice.
+Datatype for agr_site microservice.
 
-## GET /legacy/state/{stateUid}
+## GET /postal-codes-x-shiptos/{postalCodesXShiptosUid}
 
-Get State Details
-
-### Parameters
-
-| Name | Location | Required | Type | Description |
-|------|----------|----------|------|-------------|
-| Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
-| twoLetterCode | query | No | string | State Abbreviation |
-| x-site-id | header | Yes | string | siteId provided by SimpleApps |
-
----
-
-## PUT /legacy/state/{stateUid}
-
-Update State
+Get Postal Code X Ship To Details
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
+| postal_codes_x_shiptos_uid | path | Yes | integer | postalCodesXShiptosUid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## DELETE /legacy/state/{stateUid}
+## PUT /postal-codes-x-shiptos/{postalCodesXShiptosUid}
 
-DELETE State
+Update Postal Code X Ship To
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
+| postal_codes_x_shiptos_uid | path | Yes | integer | postalCodesXShiptosUid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /legacy/state
+## DELETE /postal-codes-x-shiptos/{postalCodesXShiptosUid}
 
-List States
+Soft Delete Postal Code X Ship To
+
+### Parameters
+
+| Name | Location | Required | Type | Description |
+|------|----------|----------|------|-------------|
+| Authorization | header | Yes | string | Bearer token (JWT) |
+| postal_codes_x_shiptos_uid | path | Yes | integer | postalCodesXShiptosUid |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+
+---
+
+## GET /postal-codes-x-shiptos
+
+List Postal Codes X Ship Tos
 
 ### Parameters
 
@@ -56,15 +55,16 @@ List States
 | Authorization | header | Yes | string | Bearer token (JWT) |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Order By (Default: state_uid|ASC) |
-| twoLetterCode | query | No | string | State Abbreviation |
+| orderBy | query | No | string | Order By (Default: postal_codes_x_shiptos_uid|ASC) |
+| q | query | No | string | Search by postal code |
+| statusCd | query | No | int | Status Code (status_cd) [(704)|(705)|(700)] |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## POST /legacy/state
+## POST /postal-codes-x-shiptos
 
-Create State
+Create Postal Code X Ship To
 
 ### Parameters
 

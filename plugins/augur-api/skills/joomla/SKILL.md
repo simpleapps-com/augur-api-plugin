@@ -19,6 +19,13 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 ## API Endpoints
 
+### categories
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /categories/{id} | Get Category by ID | [categories.md](categories.md#get-categoriesid) |
+| GET | /categories | List Categories | [categories.md](categories.md#get-categories) |
+
 ### content
 
 | Method | Endpoint | Description | Details |
@@ -38,6 +45,7 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
 | GET | /menu/{id}/doc | Get Menu Doc | [menu.md](menu.md#get-menuiddoc) |
+| GET | /menu | List Menu Items | [menu.md](menu.md#get-menu) |
 
 ### tags
 

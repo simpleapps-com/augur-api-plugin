@@ -2,7 +2,7 @@
 
 Datatype for p21_sism microservice.
 
-## GET /import/{import_uid}/imp-oe-hdr-salesrep
+## GET /import/{importUid}/imp-oe-hdr-salesrep
 
 Get the details from imp_oe_hdr_salesrep table
 
@@ -16,7 +16,7 @@ Get the details from imp_oe_hdr_salesrep table
 
 ---
 
-## PUT /import/{import_uid}/imp-oe-hdr-salesrep
+## PUT /import/{importUid}/imp-oe-hdr-salesrep
 
 Update imp_oe_hdr_salesrep table
 

@@ -54,6 +54,7 @@ Get User Doc
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
 | id | path | Yes | integer | users.id |
+| includeShipTo | query | No | string | Include ship-to header data in response |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

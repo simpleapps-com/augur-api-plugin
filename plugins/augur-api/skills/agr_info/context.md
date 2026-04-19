@@ -1,17 +1,17 @@
-# Imp Oe Hdr Web
+# Context
 
-Datatype for p21_sism microservice.
+Datatype for agr_info microservice.
 
-## GET /import/{importUid}/imp-oe-hdr-web
+## GET /context/{siteId}
 
-Get the details from imp_oe_hdr_web table
+get the context for a site
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| import_uid | path | Yes | string | import.import_uid |
+| site_id | path | Yes | string | target site ID to get context for |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

@@ -1,76 +1,78 @@
-# State
+# Item Variant Hdr X Attribute
 
-Datatype for legacy microservice.
+Datatype for items microservice.
 
-## GET /legacy/state/{stateUid}
+## GET /variants/{itemVariantHdrUid}/attributes/{attributeUid}
 
-Get State Details
+Get variant attribute link details
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
-| twoLetterCode | query | No | string | State Abbreviation |
+| attribute_uid | path | Yes | integer | attribute_uid |
+| item_variant_hdr_uid | path | Yes | integer | item_variant_hdr_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## PUT /legacy/state/{stateUid}
+## PUT /variants/{itemVariantHdrUid}/attributes/{attributeUid}
 
-Update State
+Update variant attribute link
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
+| attribute_uid | path | Yes | integer | attribute_uid |
+| item_variant_hdr_uid | path | Yes | integer | item_variant_hdr_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## DELETE /legacy/state/{stateUid}
+## DELETE /variants/{itemVariantHdrUid}/attributes/{attributeUid}
 
-DELETE State
+Remove attribute from variant
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
+| attribute_uid | path | Yes | integer | attribute_uid |
+| item_variant_hdr_uid | path | Yes | integer | item_variant_hdr_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /legacy/state
+## GET /variants/{itemVariantHdrUid}/attributes
 
-List States
+List attributes for variant
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
+| item_variant_hdr_uid | path | Yes | integer | item_variant_hdr_uid |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Order By (Default: state_uid|ASC) |
-| twoLetterCode | query | No | string | State Abbreviation |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## POST /legacy/state
+## POST /variants/{itemVariantHdrUid}/attributes
 
-Create State
+Add attribute to variant
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
+| item_variant_hdr_uid | path | Yes | integer | item_variant_hdr_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

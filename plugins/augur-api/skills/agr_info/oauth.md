@@ -1,31 +1,31 @@
-# Imp Oe Hdr
+# Oauth
 
-Datatype for p21_sism microservice.
+Datatype for agr_info microservice.
 
-## GET /import/{importUid}/imp-oe-hdr
+## POST /oauth/refresh
 
-Get the details from imp_oe_hdr table
+Rotate a refresh token; returns a new access/refresh pair
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| import_uid | path | Yes | string | import.import_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## PUT /import/{importUid}/imp-oe-hdr
+## DELETE /oauth/grants/{grantId}
 
-Update imp_oe_hdr table
+Revoke a grant; idempotent per RFC 7009 spirit
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| import_uid | path | Yes | string | import.import_uid |
-| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+| grant_id | path | Yes | string | Grant identifier (UUID) |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps (caller) |
+| x-target-site-id | header | Yes | string | Target siteId where the grant lives |
 
 ---

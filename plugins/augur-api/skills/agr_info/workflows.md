@@ -1,70 +1,66 @@
-# State
+# Workflows
 
-Datatype for legacy microservice.
+Datatype for agr_info microservice.
 
-## GET /legacy/state/{stateUid}
+## GET /workflows/{workflowsUid}
 
-Get State Details
-
-### Parameters
-
-| Name | Location | Required | Type | Description |
-|------|----------|----------|------|-------------|
-| Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
-| twoLetterCode | query | No | string | State Abbreviation |
-| x-site-id | header | Yes | string | siteId provided by SimpleApps |
-
----
-
-## PUT /legacy/state/{stateUid}
-
-Update State
+Get Workflow Details
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
+| workflows_uid | path | Yes | integer | workflows_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## DELETE /legacy/state/{stateUid}
+## PUT /workflows/{workflowsUid}
 
-DELETE State
+Update Workflow
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
+| workflows_uid | path | Yes | integer | workflows_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /legacy/state
+## DELETE /workflows/{workflowsUid}
 
-List States
+Delete Workflow
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| limit | query | No | int | Limit number of results (Default: 10) |
-| offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Order By (Default: state_uid|ASC) |
-| twoLetterCode | query | No | string | State Abbreviation |
+| workflows_uid | path | Yes | integer | workflows_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## POST /legacy/state
+## GET /workflows
 
-Create State
+List Workflows
+
+### Parameters
+
+| Name | Location | Required | Type | Description |
+|------|----------|----------|------|-------------|
+| Authorization | header | Yes | string | Bearer token (JWT) |
+| orderBy | query | No | string | Order By (Default: workflows_uid|ASC) |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+
+---
+
+## POST /workflows
+
+Create Workflow
 
 ### Parameters
 

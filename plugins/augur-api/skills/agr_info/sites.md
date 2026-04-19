@@ -1,31 +1,29 @@
-# Imp Oe Hdr
+# Sites
 
-Datatype for p21_sism microservice.
+Datatype for agr_info microservice.
 
-## GET /import/{importUid}/imp-oe-hdr
+## POST /sites/validate
 
-Get the details from imp_oe_hdr table
+Validate credentials and return P21 connection details
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| import_uid | path | Yes | string | import.import_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## PUT /import/{importUid}/imp-oe-hdr
+## POST /sites/verify-user
 
-Update imp_oe_hdr table
+Verify a Joomla password and issue an agr-int OAuth grant
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| import_uid | path | Yes | string | import.import_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

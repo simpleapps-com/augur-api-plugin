@@ -1,36 +1,35 @@
-# Menu
+# Categories
 
 Datatype for joomla microservice.
 
-## GET /menu/{id}/doc
+## GET /categories/{id}
 
-Get Menu Doc
+Get Category by ID
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| alias | query | No | string | Menu alias for lookup when id=0 |
-| id | path | Yes | integer | menu.id |
+| id | path | Yes | integer | categories.id |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /menu
+## GET /categories
 
-List Menu Items
+List Categories
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
+| extension | query | No | string | Extension filter (e.g. com_content) |
 | limit | query | No | integer | Limit number of results (Default: 10) |
-| menutype | query | No | string | Joomla menu type identifier |
 | offset | query | No | integer | Offset number of results (Default: 0) |
-| orderBy | query | No | string | Sort ordering (Default: lft|ASC) |
-| parentId | query | No | integer | Parent menu item ID |
+| orderBy | query | No | string | Sort ordering (Default: id|ASC) |
+| parentId | query | No | integer | Parent category ID |
 | published | query | No | integer | Published state filter |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 

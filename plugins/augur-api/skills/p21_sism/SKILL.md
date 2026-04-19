@@ -29,37 +29,30 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /import/{import_uid}/imp-oe-hdr | Get the details from imp_oe_hdr table | [imp_oe_hdr.md](imp_oe_hdr.md#get-importimport_uidimp-oe-hdr) |
-| PUT | /import/{import_uid}/imp-oe-hdr | Update imp_oe_hdr table | [imp_oe_hdr.md](imp_oe_hdr.md#put-importimport_uidimp-oe-hdr) |
+| GET | /import/{importUid}/imp-oe-hdr | Get the details from imp_oe_hdr table | [imp_oe_hdr.md](imp_oe_hdr.md#get-importimportUidimp-oe-hdr) |
+| PUT | /import/{importUid}/imp-oe-hdr | Update imp_oe_hdr table | [imp_oe_hdr.md](imp_oe_hdr.md#put-importimportUidimp-oe-hdr) |
 
 ### imp_oe_hdr_salesrep
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /import/{import_uid}/imp-oe-hdr-salesrep | Get the details from imp_oe_hdr_salesrep table | [imp_oe_hdr_salesrep.md](imp_oe_hdr_salesrep.md#get-importimport_uidimp-oe-hdr-salesrep) |
-| PUT | /import/{import_uid}/imp-oe-hdr-salesrep | Update imp_oe_hdr_salesrep table | [imp_oe_hdr_salesrep.md](imp_oe_hdr_salesrep.md#put-importimport_uidimp-oe-hdr-salesrep) |
+| GET | /import/{importUid}/imp-oe-hdr-salesrep | Get the details from imp_oe_hdr_salesrep table | [imp_oe_hdr_salesrep.md](imp_oe_hdr_salesrep.md#get-importimportUidimp-oe-hdr-salesrep) |
+| PUT | /import/{importUid}/imp-oe-hdr-salesrep | Update imp_oe_hdr_salesrep table | [imp_oe_hdr_salesrep.md](imp_oe_hdr_salesrep.md#put-importimportUidimp-oe-hdr-salesrep) |
 
 ### imp_oe_hdr_web
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /import/{import_uid}/imp-oe-hdr-web | Get the details from imp_oe_hdr_web table | [imp_oe_hdr_web.md](imp_oe_hdr_web.md#get-importimport_uidimp-oe-hdr-web) |
-
-### imp_oe_line
-
-| Method | Endpoint | Description | Details |
-|--------|----------|-------------|---------|
-| GET | /imp_oe_line/{importUid}/{lineNo} | Get ImpOeLine Details | [imp_oe_line.md](imp_oe_line.md#get-imp_oe_lineimportUidlineNo) |
-| PUT | /imp_oe_line/{importUid}/{lineNo} | Update ImpOeLine | [imp_oe_line.md](imp_oe_line.md#put-imp_oe_lineimportUidlineNo) |
-| GET | /imp_oe_line | List ImpOeLines | [imp_oe_line.md](imp_oe_line.md#get-imp_oe_line) |
+| GET | /import/{importUid}/imp-oe-hdr-web | Get the details from imp_oe_hdr_web table | [imp_oe_hdr_web.md](imp_oe_hdr_web.md#get-importimportUidimp-oe-hdr-web) |
 
 ### import
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| GET | /import/{import_uid} | Get the details of an import | [import.md](import.md#get-importimport_uid) |
-| PUT | /import/{import_uid} | Update an import | [import.md](import.md#put-importimport_uid) |
-| DELETE | /import/{import_uid} | clean pending_import for an import | [import.md](import.md#delete-importimport_uid) |
+| GET | /import/daily-summary | Get daily import counts by state | [import.md](import.md#get-importdaily-summary) |
+| GET | /import/{importUid} | Get the details of an import | [import.md](import.md#get-importimportUid) |
+| PUT | /import/{importUid} | Update an import | [import.md](import.md#put-importimportUid) |
+| DELETE | /import/{importUid} | clean pending_import for an import | [import.md](import.md#delete-importimportUid) |
 | GET | /import | Get a list of imports | [import.md](import.md#get-import) |
 | GET | /import/recent | Get a list of the most recent imports | [import.md](import.md#get-importrecent) |
 | GET | /import/stuck | Get a list of stuck imports | [import.md](import.md#get-importstuck) |
@@ -68,4 +61,4 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
-| POST | /scheduled-import-master/{scheduled_import_master_uid}/metadata/sftp | Create SFTP metadata for a scheduled import master | [scheduled_import_metadata.md](scheduled_import_metadata.md#post-scheduled-import-masterscheduled_import_master_uidmetadatasftp) |
+| POST | /scheduled-import-master/{scheduledImportMasterUid}/metadata/sftp | Create SFTP metadata for a scheduled import master | [scheduled_import_metadata.md](scheduled_import_metadata.md#post-scheduled-import-masterscheduledImportMasterUidmetadatasftp) |

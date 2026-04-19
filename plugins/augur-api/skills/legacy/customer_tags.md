@@ -1,70 +1,69 @@
-# State
+# Customer Tags
 
 Datatype for legacy microservice.
 
-## GET /legacy/state/{stateUid}
+## GET /customers/{customerId}/tags/{customerTagsUid}
 
-Get State Details
-
-### Parameters
-
-| Name | Location | Required | Type | Description |
-|------|----------|----------|------|-------------|
-| Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
-| twoLetterCode | query | No | string | State Abbreviation |
-| x-site-id | header | Yes | string | siteId provided by SimpleApps |
-
----
-
-## PUT /legacy/state/{stateUid}
-
-Update State
+Get Customer Tag Details
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
+| customer_id | path | Yes | integer | customer_id |
+| customer_tags_uid | path | Yes | integer | customer_tags_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## DELETE /legacy/state/{stateUid}
+## PUT /customers/{customerId}/tags/{customerTagsUid}
 
-DELETE State
+Update Customer Tag
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| state_uid | path | Yes | integer | state_uid |
+| customer_id | path | Yes | integer | customer_id |
+| customer_tags_uid | path | Yes | integer | customer_tags_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## GET /legacy/state
+## DELETE /customers/{customerId}/tags/{customerTagsUid}
 
-List States
+Delete Customer Tag
 
 ### Parameters
 
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
-| limit | query | No | int | Limit number of results (Default: 10) |
-| offset | query | No | int | Starting offset results (Default: 0) |
-| orderBy | query | No | string | Order By (Default: state_uid|ASC) |
-| twoLetterCode | query | No | string | State Abbreviation |
+| customer_id | path | Yes | integer | customer_id |
+| customer_tags_uid | path | Yes | integer | customer_tags_uid |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---
 
-## POST /legacy/state
+## GET /customers/{customerId}/tags
 
-Create State
+List Customer Tags
+
+### Parameters
+
+| Name | Location | Required | Type | Description |
+|------|----------|----------|------|-------------|
+| Authorization | header | Yes | string | Bearer token (JWT) |
+| customer_id | path | Yes | integer | customer_id |
+| x-site-id | header | Yes | string | siteId provided by SimpleApps |
+
+---
+
+## POST /customers/{customerId}/tags
+
+Create Customer Tag
 
 ### Parameters
 

@@ -55,6 +55,7 @@ List Settings
 | Authorization | header | Yes | string | Bearer token (JWT) |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: settings_uid|ASC) |
 | serviceName | query | Yes | string | Service Name |
 | statusCd | query | No | int | Status Code (status_cd) [(704)|(705)|(700)] |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |

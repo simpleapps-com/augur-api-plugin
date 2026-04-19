@@ -13,6 +13,7 @@ List Payment Types
 | Authorization | header | Yes | string | Bearer token (JWT) |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: payment_types_uid|ASC) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

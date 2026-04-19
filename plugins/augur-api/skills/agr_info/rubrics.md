@@ -53,6 +53,7 @@ List Rubrics
 | Name | Location | Required | Type | Description |
 |------|----------|----------|------|-------------|
 | Authorization | header | Yes | string | Bearer token (JWT) |
+| orderBy | query | No | string | Order By (Default: rubrics_uid|ASC) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

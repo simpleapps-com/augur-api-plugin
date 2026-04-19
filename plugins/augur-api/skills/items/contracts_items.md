@@ -37,6 +37,7 @@ List contracts items for a job
 | q | query | No | string | search query (optional) |
 | sortBy | query | No | string | Field from Document to sort by (Default: item_id) |
 | tags | query | No | string | A CSV of tags |
+| variantFilter | query | No | string | Filter variants [primary_only] (Default: blank) |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 
 ---

@@ -59,6 +59,7 @@ List Item Variant Lines
 | item_variant_hdr_uid | path | Yes | integer | itemVariantHdrUid |
 | limit | query | No | int | Limit number of results (Default: 10) |
 | offset | query | No | int | Starting offset results (Default: 0) |
+| orderBy | query | No | string | Order By (Default: item_variant_line_uid|ASC) |
 | statusCd | query | No | int | Status Code (status_cd) [(704)|(705)|(700)] |
 | x-site-id | header | Yes | string | siteId provided by SimpleApps |
 

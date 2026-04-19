@@ -1,6 +1,6 @@
 ---
 name: Agr Site API
-description: Use when working with basecamp, basecamp comments, basecamp summary, basecamp threads, basecamp todos, commerce, data type context, fyxer transcript hdr, fyxer transcript line, general, geo codes postal codes, goog mc, health check, items, joomla, legacy, meta files hdr, meta files line, notifications, open search, orders, p21 apis, pricing, profit sharing hdr, profit sharing line, seed, settings, sites, training conv, training msg, training set, vendors, or making API calls to https://agr-site.augur-api.com.
+description: Use when working with basecamp, basecamp comments, basecamp summary, basecamp threads, basecamp todos, commerce, context, data type context, fyxer transcript hdr, fyxer transcript line, general, geo codes postal codes, goog mc, health check, items, joomla, legacy, meta files hdr, meta files line, notifications, oauth grants, open search, orders, p21 apis, postal codes x shiptos, pricing, profit sharing hdr, profit sharing line, seed, settings, sites, training conv, training msg, training set, vendors, or making API calls to https://agr-site.augur-api.com.
 version: 1.0.5
 ---
 
@@ -18,6 +18,12 @@ Service-specific knowledge for agr_site microservice.
 All endpoints except `/health-check` and `/ping` require bearer token authentication. See [authentication.md](../augur-api/authentication.md) for details.
 
 ## API Endpoints
+
+### context
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /context/{siteId} | get the context for a site | [context.md](context.md#get-contextsiteId) |
 
 ### fyxer_transcript_hdr
 
@@ -61,6 +67,16 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | Method | Endpoint | Description | Details |
 |--------|----------|-------------|---------|
 | GET | /open-search/embedding | Get Query String Embedding | [open_search.md](open_search.md#get-open-searchembedding) |
+
+### postal_codes_x_shiptos
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /postal-codes-x-shiptos/{postalCodesXShiptosUid} | Get Postal Code X Ship To Details | [postal_codes_x_shiptos.md](postal_codes_x_shiptos.md#get-postal-codes-x-shiptospostalCodesXShiptosUid) |
+| PUT | /postal-codes-x-shiptos/{postalCodesXShiptosUid} | Update Postal Code X Ship To | [postal_codes_x_shiptos.md](postal_codes_x_shiptos.md#put-postal-codes-x-shiptospostalCodesXShiptosUid) |
+| DELETE | /postal-codes-x-shiptos/{postalCodesXShiptosUid} | Soft Delete Postal Code X Ship To | [postal_codes_x_shiptos.md](postal_codes_x_shiptos.md#delete-postal-codes-x-shiptospostalCodesXShiptosUid) |
+| GET | /postal-codes-x-shiptos | List Postal Codes X Ship Tos | [postal_codes_x_shiptos.md](postal_codes_x_shiptos.md#get-postal-codes-x-shiptos) |
+| POST | /postal-codes-x-shiptos | Create Postal Code X Ship To | [postal_codes_x_shiptos.md](postal_codes_x_shiptos.md#post-postal-codes-x-shiptos) |
 
 ### settings
 

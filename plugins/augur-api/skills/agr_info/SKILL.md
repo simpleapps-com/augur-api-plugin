@@ -1,6 +1,6 @@
 ---
 name: Agr Info API
-description: Use when working with akasha, auggie, basecamp, basecamp threads, data type context, health check, joomla, memo, microservices, note, ollama, rubrics, seed, sites, or making API calls to https://agr-info.augur-api.com.
+description: Use when working with akasha, auggie, basecamp, basecamp threads, context, data type context, health check, joomla, memo, microservices, note, oauth, ollama, rubrics, seed, sites, workflows, or making API calls to https://agr-info.augur-api.com.
 version: 1.0.5
 ---
 
@@ -25,6 +25,12 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 |--------|----------|-------------|---------|
 | POST | /akasha/generate | Generate Response from akasha | [akasha.md](akasha.md#post-akashagenerate) |
 
+### context
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /context/{siteId} | get the context for a site | [context.md](context.md#get-contextsiteId) |
+
 ### health_check
 
 | Method | Endpoint | Description | Details |
@@ -47,6 +53,13 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | GET | /microservices | List Microservices | [microservices.md](microservices.md#get-microservices) |
 | POST | /microservices | Create Microservice | [microservices.md](microservices.md#post-microservices) |
 
+### oauth
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| POST | /oauth/refresh | Rotate a refresh token; returns a new access/refresh pair | [oauth.md](oauth.md#post-oauthrefresh) |
+| DELETE | /oauth/grants/{grantId} | Revoke a grant; idempotent per RFC 7009 spirit | [oauth.md](oauth.md#delete-oauthgrantsgrantId) |
+
 ### ollama
 
 | Method | Endpoint | Description | Details |
@@ -62,3 +75,20 @@ All endpoints except `/health-check` and `/ping` require bearer token authentica
 | DELETE | /rubrics/{rubricsUid} | Delete Rubric | [rubrics.md](rubrics.md#delete-rubricsrubricsUid) |
 | GET | /rubrics | List Rubrics | [rubrics.md](rubrics.md#get-rubrics) |
 | POST | /rubrics | Create Rubric | [rubrics.md](rubrics.md#post-rubrics) |
+
+### sites
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| POST | /sites/validate | Validate credentials and return P21 connection details | [sites.md](sites.md#post-sitesvalidate) |
+| POST | /sites/verify-user | Verify a Joomla password and issue an agr-int OAuth grant | [sites.md](sites.md#post-sitesverify-user) |
+
+### workflows
+
+| Method | Endpoint | Description | Details |
+|--------|----------|-------------|---------|
+| GET | /workflows/{workflowsUid} | Get Workflow Details | [workflows.md](workflows.md#get-workflowsworkflowsUid) |
+| PUT | /workflows/{workflowsUid} | Update Workflow | [workflows.md](workflows.md#put-workflowsworkflowsUid) |
+| DELETE | /workflows/{workflowsUid} | Delete Workflow | [workflows.md](workflows.md#delete-workflowsworkflowsUid) |
+| GET | /workflows | List Workflows | [workflows.md](workflows.md#get-workflows) |
+| POST | /workflows | Create Workflow | [workflows.md](workflows.md#post-workflows) |
